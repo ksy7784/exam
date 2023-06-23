@@ -1,0 +1,149 @@
+#root {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .dark-btn{
+  padding: 0px 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #eee;
+  width: 100px;
+  height: 35px;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+header .light-btn{
+  padding: 0px 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  width: 100px;
+  height: 35px;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  margin-right: 10px;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+main {
+  height: 100vh;
+}
+main .inputAndbtn .light-search{
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+main .inputAndbtn .dark-search{
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  background-color: black;
+  color: white;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+
+main .light-search-btn{
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+main .dark-search-btn{
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+.inputAndbtn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.country-list{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+.country-card{
+  border: 1px solid #ccc;
+  background-color: white;
+  color: black;
+  width: 320px;
+}
+.country-card .country-flag{
+  height: 160px;
+  width: 320px;
+}
+.country-details{
+  width: 1000px;
+  display: grid;
+  justify-items: flex-start;
+  grid-template-areas:
+  "btn btn"
+  "img info";
+}
+.country-details .btn-place{
+  grid-area: btn;
+}
+.country-details .btn-place button{
+  margin: 0 0px 10px 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  font-family: 'omyu_pretty', 'sans-serif';
+}
+.country-details .img-place{
+  grid-area: img;
+}
+.country-details .img-place img{
+  width: 700px;
+  height:400px;
+}
+.country-details .info-place{
+  grid-area: info;
+  text-align: left;
+  line-height: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.App{
+  background-color: white;
+  color: black;  
+}
+
+.App.darkmode{
+  background-color: #000;
+  color: white;
+}
+.darkmode h1{
+  color: white;
+}
+
+
